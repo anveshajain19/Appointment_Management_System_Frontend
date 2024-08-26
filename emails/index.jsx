@@ -32,7 +32,7 @@ export const EmailTemplate = ({
     <Body style={main}>
       <Container style={container}>
         <Img
-          src={`${baseUrl}/logo.svg`}
+          src={`${baseUrl}/logo.svg`} // Corrected line
           width="170"
           height="50"
           alt="Koala"
@@ -40,7 +40,7 @@ export const EmailTemplate = ({
         />
         <Text style={paragraph}>Hi {UserName},</Text>
         <Text style={paragraph}>
-          Your Appointment with Doctor has booked on {Date} at {Time}
+          Your Appointment with Doctor has been booked on {Date} at {Time}.
         </Text>
         {/* <Section style={btnContainer}>
             <Button style={button} href="https://getkoala.com">

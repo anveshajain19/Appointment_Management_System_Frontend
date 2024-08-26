@@ -9,7 +9,7 @@ export async function POST(req) {
   const result = response.data;
   try {
     const data = await resend.emails.send({
-      from: "sendersmail.com",
+      from: "Acme <onboarding@resend.dev>",
       to: [response.data.Email],
       subject: "Appointment Booking Confirmation",
       react: EmailTemplate({ result }),
